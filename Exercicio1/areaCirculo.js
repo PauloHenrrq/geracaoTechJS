@@ -2,6 +2,7 @@
 
 let Rcirculo = Number(prompt('Escreva o raio do Círculo: '))
 
-Acirculo = 3.14 * (Rcirculo ** 2) 
+Acirculo = 3.14159265358979323846 * (Rcirculo ** 2) 
 
-alert (Acirculo)
+console.log(Acirculo.toFixed(2))
+console.log(Acirculo)
