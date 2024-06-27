@@ -2,7 +2,7 @@ let variavelTipoLet = 'coisa'
 
 var variavelTipoVar = 'coisa2'
 
-const variavelTipoConst ='Káthia'
+const variavelTipoConst = 'Káthia'
 
 variavelTipolet = 1
 

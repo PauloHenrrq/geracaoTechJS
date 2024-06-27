@@ -11,7 +11,7 @@
 // while(i<= quantasVezes){
 //     console.log('São Longuinho')
 //     console.log('Ganhou 100')
-//     acumulator += 100
+//     acumulator += 100 
 //     i+=1
 // }
 
@@ -34,10 +34,10 @@ while(numero <= final){
     soma += numero
     numero += 2
 }
+
 while(numero <= final){
-    if(numero%2==0 || numero%5==0){
+    if(numero%2==0 || numero%5==0){ 
         soma += numero
     }
     numero += 1
 }
-
