@@ -12,12 +12,3 @@ for(let num = min ; num <= descontoLimite ; num++) {
     valorCompra += incremento
 }
 
-// if (compra <= 499) {
-//     console.log(`Valor da compra: ${compra}`)
-//     console.log(`Porcentagem de desconto: 0%`)
-//     console.log(`Valor final: ${compra}`)
-// }
-
-// R$ 500 ----- 1%
-// R$ 600 ----- 2% ...
-// ? ----- 25%
