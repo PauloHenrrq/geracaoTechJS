@@ -1,9 +1,9 @@
 //escreva todos os númeors pares de 1 até 100.
 
-for (let i = 0; i < 101; i += 2) {
-    console.log(i);
+// for (let i = 0; i < 101; i += 2) {
+//     console.log(i);
 
-}
+// }
 
 //calcular a média de 4 notas 
 
