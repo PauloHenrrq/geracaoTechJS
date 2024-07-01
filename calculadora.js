@@ -1,3 +1,8 @@
+// 4 operações básicas em função, com dois parâmetros obrigatórios
+
+// função calculadora que recebe dois números e uma função como parâmetro e mostra o retorno da função no alert para o usuário
+
+
 function calculadora() {
     let v1 = Number(prompt('Digite o primeiro número:'))
     let v2 = Number(prompt('Digite o primeiro número:'))
