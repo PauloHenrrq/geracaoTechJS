@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+
+    <style>
+        .oculta {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,14 +25,24 @@
     </p>
 
     <ul>
-        <li>Coisa</li>
-        <li>Coisa</li>
-        <li id="especial">Coisa</li>
+        <li>Coisa 1</li>
+        <li class="oculta">Coisa 2</li>
+        <li id="especial">Coisa 3</li>
     </ul>
 
     <div>
         <h2>Título 2</h2>
     </div>
+
+    <form action="">
+        <input type="text" id="nome" placeholder="Digite seu nome"> <!-- objeto do tipo input, não contém atributo de innerHTML, contém value -->
+
+        <input type="checkbox" name="turno" id="turnoManha" value="manha">
+        <label for="turnoManha">Manhã</label>
+        <input type="checkbox" name="turno" id="turnoTarde" value="tarde">
+        <label for="turnoTarde">Tarde</label>
+        <button onclick="dizerOI()">DIZER OI</button>
+    </form>
 
     <script>
         // mais generalista = tag
@@ -47,12 +63,18 @@
         // manipulação da propriedade de CSS
         item.style.color = 'red'
         // manipulação do conteúdo da tag
-        item.innerHTML = 'mudei com JS'
+        // item.innerHTML = 'mudei com JS'
 
         let li = document.querySelectorAll('#especial')
 
         let div = document.querySelector('div')
         div.innerHTML += '<h3> Meu título 3 </h3>'
+
+        let itemOculto = document.querySelector('.oculta')
+
+        function dizerOI() {
+            alert('Oie')
+        }
     </script>
 </body>
 
