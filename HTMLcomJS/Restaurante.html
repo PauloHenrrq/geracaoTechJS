@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: cornsilk;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            width: 400px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Restaurante
+    </h1>
+
+    <div>
+        <form action="">
+            <label for="entrada">Entrada:</label>
+            <br>
+            <input type="number" name="entrada" id="entrada" onchange="mostrarConta()" value="0">
+            <br>
+
+            <label for="pratoPrincipal">Prato principal:</label>
+            <br>
+            <input type="number" name="Prato principal" id="pratoPrincipal" onchange="mostrarConta()" value="0">
+            <br>
+
+            <label for="bebidas">Bebidas:</label>
+            <br>
+            <input type="number" name="Bebidas" id="bebidas" onchange="mostrarConta()" value="0">
+            <br>
+
+            <label for="sobremesa">Sobremesa:</label>
+            <br>
+            <input type="number" name="Sobremesa" id="sobremesa" onchange="mostrarConta()" value="0">
+            <br>
+
+            <label for="taxaServico">Sub-total:</label>
+            <br>
+            <input type="number" name="Taxa de Serviço" id="taxaServico" onchange="mostrarConta()" disabled value="0">
+            <br>
+
+            <label for="subtotal">Taxa de Serviço (10%):</label>
+            <br>
+            <input type="number" name="entrada" id="subtotal" onchange="mostrarConta()" disabled value="0">
+            <br>
+
+            <label for="total">Total a pagar:</label>
+            <br>
+            <input type="number" name="Total a pagar" id="total" onchange="mostrarConta()" disabled value="0">
+            <br>
+        </form>
+    </div>
+
+    <script src="Restaurante.js"></script>
+</body>
+
+</html>
