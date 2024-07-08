@@ -26,7 +26,7 @@ divH1.innerHTML = 'Paulo Henrique'
 ulLI.innerHTML = '19 anos'
 ulLI2.innerHTML = 'Rua berimbales pales bales'
 
-div.appendChild(divH1, divUL)
+div.appendChild(divH1)
 div.appendChild(divUL)
 divUL.appendChild(ulLI)
 divUL.appendChild(ulLI2)

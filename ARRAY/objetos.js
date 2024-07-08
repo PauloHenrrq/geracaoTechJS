@@ -60,7 +60,6 @@
 let produtos = []
 
 
-
 for (let i = 1; i <= 5; i++) {
     let nome = prompt(`Nome do produto nº${i}`)
     let preco = parseFloat(`Preço do produto nº${i}`)
