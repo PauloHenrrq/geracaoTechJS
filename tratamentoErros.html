@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    // trycath
+
+        try {
+            
+            // todo código possível de erro
+            let numero = Number(prompt("Digite apenas 1 ou 2"))
+
+            if(numero == 1 || numero == 2) {
+                alert('Acertou miseravi!')
+            }
+            else {
+                throw new Error(`Você não digitou 1 ou 2. Erro personalizado`)
+            }
+        } catch (error) {
+            // captar qualquer erro levantado no bloco try
+            console.log(error.message)
+        }
+
+        alert('executei mesmo com erro')
+        
+    </script>
+</body>
+</html>

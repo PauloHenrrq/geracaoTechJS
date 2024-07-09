@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">CEP</label>
+        <input type="number" id="cep" placeholder="Digite apenas os números do CEP">
+        <input type="button" value="Buscar CEP" id="btnCEP">
+    </form>
+
+
+    <script>
+        let cep = document.getElementById('cep')
+        let btnCEP = document.getElementById('btnCEP')
+
+        function buscarCEP(cep) {
+            let respostaAPI =
+                fetch(`https://viacep.com.br/ws/${cep}/json/`).
+                then((resposta) => resposta.json()).
+                then((objeto) => console.log(objeto)).
+                catch(console.log('Ocorreu um erro e eu tratei'))
+        }
+
+        btnCEP.addEventListener('click', ()=> buscarCEP(cep.value))
+
+    </script>
+</body>
+
+</html>
