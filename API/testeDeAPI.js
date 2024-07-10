@@ -2,9 +2,6 @@ let products = []
 let elementoPai = document.querySelector('body')
 
 // assincrona ----- leva tempo para ser executada
-async function Produtos() {
-    
-}
 fetch('https://fakestoreapi.com/products')
     .then(res => res.json())
     .then((objeto)=>{products = objeto
