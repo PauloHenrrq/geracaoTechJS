@@ -16,21 +16,29 @@
 --> Laços de repetição (for)
                        (while)
 
---> Tratamento de Erros (try / catch /finaly)
+--> Tratamento de Erros (try / catch / finaly)
 
---> Arrays (indice)
-           (.pop())
+--> Arrays (.pop())
            (.push())
            (.shift())
            (.unshift())
 
---> Objetos (Objet .key())
+--> Objetos (Object .key())
             (Object.values())
             (delete chave)
 
--- Consumo API (async function)
+--> Consumo API (async function)
                (fetch)
                (then)
+
+--> Métodos agregadores (forEach)
+                        (map)
+                        (filter)
+                        (reduce)
+
+--> localStorage (setItem)
+                 (getItem)
+                 (removeItem)
 
 *Métodos do document*
 
