@@ -1,0 +1,42 @@
+*Revisão JS*
+
+--> Variáveis (let, var, const)
+--> Operadores (aritméticos: +  -  /  *  **)
+               (reatribuição: +=  -=  /=  *=)
+               (lógicos: !=  ==  ===  &&  ||  <  >)
+
+--> Funções (retorno)
+            (sem retorno)
+            (callback)
+            (arrow function)
+
+--> Condicionais (if/else)
+                 (switch/case)
+
+--> Laços de repetição (for)
+                       (while)
+
+--> Tratamento de Erros (try / catch /finaly)
+
+--> Arrays (indice)
+           (.pop())
+           (.push())
+           (.shift())
+           (.unshift())
+
+--> Objetos (Objet .key())
+            (Object.values())
+            (delete chave)
+
+-- Consumo API (async function)
+               (fetch)
+               (then)
+
+*Métodos do document*
+
+- getElementsByTagName()
+- getElementsByName()
+- getElementsByClassName()
+- getElementByID()
+- querySelector()
+- querySelectorAll()
