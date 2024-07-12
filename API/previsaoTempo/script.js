@@ -1,5 +1,3 @@
-
-
 const chave = "&appid=cebcd482eda57fa9a6714c1c2ba91885"
 const apiWeather = "https://api.openweathermap.org/data/2.5/weather?q="
 const linguagem = "&lang=pt_br"
@@ -25,21 +23,30 @@ let maceio = document.getElementById('maceio')
 
 
 async function buscarCidade(nomeCidade) {
-    url = apiWeather + nomeCidade + chave + linguagem + unidade
-    const resposta = await fetch(url)
-    const objeto = await resposta.json()
-    return objeto
+    try {
+        url = apiWeather + nomeCidade + chave + linguagem + unidade
+        const resposta = await fetch(url)
+        const objeto = await resposta.json()
+        return objeto
+    } catch (error) {
+        alert('Lugar não encontrado!')
+    }
+
 }
 
 async function exibirInformacoes(cidade) {
-    let informacoes = await buscarCidade(cidade)
+    try {
+        let informacoes = await buscarCidade(cidade)
 
-    tituloCidade.innerHTML = informacoes.name
-    temperatura.innerHTML = informacoes.main.temp + 'ºC'
-    umidade.innerHTML = informacoes.main.humidity + '%'
+        tituloCidade.innerHTML = informacoes.name
+        temperatura.innerHTML = informacoes.main.temp + 'ºC'
+        umidade.innerHTML = informacoes.main.humidity + '%'
 
-    descricaoCeu.innerHTML = informacoes.weather[0].description
-    icone.src = urlImagem + informacoes.weather[0].icon + '@2x.png'
+        descricaoCeu.innerHTML = informacoes.weather[0].description
+        icone.src = urlImagem + informacoes.weather[0].icon + '@2x.png'
+    } catch (error) {
+        alert('Lugar não encontrado!')
+    }
 }
 
 async function pesquisar() {
